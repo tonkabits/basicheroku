@@ -1,2 +1,62 @@
-<h1>{{title}} 🚀</h1>
-<p>Welcome Ironhacker!</p>
+<div class="py-12">
+
+    <div class="w-100 flex flex-reverse flex-col md:flex-row h-64">
+        <div class="w-100 md:w-6/12">
+            <div class="w-8/12 m-auto flex pt-12  text-5xl">
+                Create your account and start minting today
+                for free
+            </div>
+            <div class="flex w-8/12 m-auto mt-4">
+                <div class="flex flex-col items-center md:flex-row pt-4">
+                    <a href="/auth/signup"
+                        class="bg-green-300 text-green-800 text-center md:text-left px-4 py-2 rounded mb-2 border-2 border-green-300 mr-2">Sign
+                        up</a>
+                    {{!-- <a href="/user/{{username}}/create-collection"
+                        class="bg-green-300 text-green-800 px-4 rounded mb-2 mr-2">Create
+                        a collection</a> --}}
+                </div>
+                <div class="flex flex-col  items-centermd:flex-row pt-4">
+                    <a href="/auth/login"
+                        class="text-purple-600 hover:bg-purple-100 px-4 py-2 rounded border-2 border-purple-600 mr-2">mint
+                        an NFT</a>
+                </div>
+            </div>
+        </div>
+        <div class="w-100 md:w-6/12 order-first md:order-none">
+            <div class="bg-purple-100 flex flex-col justify-between rounded-xl w-8/12 mt-12 shadow-2xl m-auto">
+                <div class="pb-3">
+                    <div class="flex items-center relative">
+                        <img class="w-100 rounded-t-xl"
+                            src="https://res.cloudinary.com/df5euoek0/image/upload/v1631400159/minters/nhmug8lhgpiazame1exb.png">
+                        <span
+                            class="bg-red-500 text-white rounded-full h-12 w-12 absolute right-0 top-0 flex items-center justify-center m-2">
+                            rare
+                        </span>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="px-7">
+                            <h2 class="text-lg md:text-sm lg:text-2xl mt-4 font-bold">
+                                cryptopunks
+                            </h2>
+                            <p class="mt-2 opacity-60 overflow-clip overflow-hidden ...">
+                                this is a....
+                            </p>
+                        </div>
+
+                        <div class="flex mt-4 mr-2 items-center justify-between">
+                            <div class=" text-sm text-purple-600 hover:bg-purple-100 px-4 py-2 rounded border border-purple-600 mr-2"
+                                type="submit">
+                                Mint this Art
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="p-8">
+</div>

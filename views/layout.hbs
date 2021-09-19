@@ -1,19 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>{{title}}</title>
-      <link rel="stylesheet" href="/stylesheets/style.css" />
-   </head>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>{{title}}</title>
+   {{!--
+   <link rel="stylesheet" href="/stylesheets/style.css" /> --}}
+   <link rel="stylesheet" href="/stylesheets/tailwind.css" />
+   <!-- Google Tag Manager -->
+   <script>(function (w, d, s, l, i) {
+         w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+               new Date().getTime(), event: 'gtm.js'
+         }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+               'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-5L4FDT2');</script>
+   <!-- End Google Tag Manager -->
+</head>
 
-   <body>
+<body>
+   <!-- Google Tag Manager (noscript) -->
+   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5L4FDT2" height="0" width="0"
+         style="display:none;visibility:hidden"></iframe></noscript>
+   <!-- End Google Tag Manager (noscript) -->
+   <div
+      class="menu flex items-center justify-around uppercase list-none w-100 bg-purple-300 text-purple-900 h-16 py-2 px-4">
+      <div class="w-6/12 flex justify-start">
+         <a href="/">
+            <span class="font-bold">
+               Minter's
 
+            </span>
+            Paradise
+         </a>
+      </div>
+      <div class="w-6/12 flex justify-end text-sm">
+         {{#if user}}
+         <li class="pl-2"><a href="/user/{{user.username}}/profile">profile</a></li>
+         <li class="pl-2"><a href="/auth/logout">logout</a></li>
+         {{else}}
+         <li class="pl-2"><a href="/auth/signup">signup</a></li>
+         <li class="pl-2"><a href="/auth/login">login</a></li>
+         {{/if}}
+      </div>
+   </div>
+   <div class="content">
       {{{body}}}
-
-      <script src="/js/script.js"></script>
-   </body>
+   </div>
+   {{!-- <div class="footer bg-gray-200 pin-b">
+      Develop by IronHack ;)
+   </div> --}}
+   <script src="/js/script.js">test</script>
+</body>
 
 </html>
